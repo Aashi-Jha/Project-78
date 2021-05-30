@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>
+   My Family Book 
+</title>
+</head>
+
+<body style="background: linear-gradient(#fdaf1d 100%,#fc4545 200%);">
+    <center>
+<h1 style="font-family: monospace;font-weight: bolder;">MY FAMILY BOOK</h1>
+<img src="https://i.pinimg.com/originals/61/b2/d3/61b2d33f39927afa72e5f57a28cc7c83.gif" style="width: 45%;" id="images_m">
+<h2 id="member_n" style="font-weight: bold;color: rgb(247, 18, 18);font-family: monospace;font-size:xx-large;"></h2>
+<button onclick="next()" style="color: yellow;background-color: tomato;font-style:oblique;width:100px;height: 50px;font-size: larger;
+border-radius: 10px;">Next---></button>
+</center>
+<script>
+var images=
+["DSC_0372.JPG","Me.jpg","Mayra.jpg","Mummy.jpg","Papa.jpg","Aryan Bhai.jpg","Taiji.jpg","Tauji.jpg","Baba.JPG","Dadi.jpg"];
+
+var names=
+["My Family","Aashi Jha(me)","Mayra Jha(Younger Sister)","Shaline Jha(Mummy)","Ashish Jha(Papa)",
+"Aryan Jha(Bhai)","Leena Jha(Taiji)","Alok Jha(Tauji)","Rakesh Jha(Baba)","Shashi Kumari(Dadi)"];
+
+var i = 0;
+function next(){
+   document.getElementById("member_n").innerHTML=names[i];
+    document.getElementById("images_m").src=images[i];
+    i++;
+if(i==10){
+    i=0;
+}
+}
+
+
+
+</script>
+</body>
+</html>
